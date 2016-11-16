@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Even / Odd </title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+
+<div class="container">
+	<h1> Even / Odd </h1>
+
+	<p class="well">
+		Sometime ago i've just watched a cool movie with Terence Hill & Bud Spencer.<br>
+		They had to decide which one gonna take risk and instead of doing a boring 'Rock–paper–scissors',
+		they made something funny :<br> one player choose Even or odd then each player pick a number at the same time, you add them watch if the result is Even or odd.
+	</p>
+
+	<div class="well">
+		<p>Pick One:</p>
+
+		<label class="radio-inline">
+		  <input type="radio" id="inlineCheckbox1" name="side" value="even" checked="checked" > Even
+		</label>
+		<label class="radio-inline">
+		  <input type="radio" id="inlineCheckbox2" name="side" value="odd"> Odd
+		</label>
+
+	</div>
+	<div class="well">
+		<p class="text-danger"></p>
+		pick a number<br>
+		<div class="form-inline">
+  			<div class="form-group">
+				<input class="form-control" id="userNb" type="number">
+				<input class="form-control" id="iaNb" type="number" disabled="disabled">
+				<button id="validate" type='button' class="btn btn-primary">Roll !</button>
+			</div>
+		</div>
+	</div>
+
+	<h2 id="result"></h2>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="evenOdd.js"></script>
+</body>
+</html>
